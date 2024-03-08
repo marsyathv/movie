@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*BODY SETTINGS*/
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+    background-image: url('home1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: #67645f; 
+  }
+/* Overlay */
+body::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+  .top-nav {
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgb(59, 56, 56);
+    justify-content: center;
+  }
+  
+  .top-nav nav ul {
+    list-style: none;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .top-nav nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .top-nav nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative; 
+    transition: color 0.3s; 
+  }
+  
+  .top-nav img.logo {
+    margin-right: 300px; 
+    width: 150px;
+    margin-left: 60px;
+  }
+  
+  .top-nav nav ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s, background-color 0.3s; 
+  }
+  
+  .top-nav nav ul li a:hover::after {
+    width: 100%;
+    background-color: rgb(255, 191, 0); 
+  }
+
+  /*HEADER SETTINGS*/
+  header h1 {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  
+  /*MAIN SETTINGS*/
+  main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /*FONTS SETTINGS*/
+  h1{
+    color: rgb(255, 255, 255);
+  }
+  
+  /*BUTTON SETTINGS*/
+  button {
+    background-color: rgb(238, 178, 47);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: rgb(239, 229, 110);
+  }
+  
+  .button {
+    border: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /*INPUT FORM SETTINGS*/
+  input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /*CONTAINER SETTINGS*/
+  .container {
+    padding: 80px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); 
+    margin-top: 100px;
+    margin-left: 240px;
+    max-width: 700px;
+  }
+  
+/*TABLE SETTINGS*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table tr {
+  margin-bottom: 10px;
+}
+
+table th {
+  background-color: rgb(47, 98, 114);
+  color: #fff;
+}
+
+#fileTableBody {
+  background-color: #f0f0f0;
+}
+
+#fileContents {
+  min-height: 100px;
+}

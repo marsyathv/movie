@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- TITTLE-->
+    <title>STW</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="stw.css">
+
+    <!-- LINK FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- NAVIGATION-->
+    <header class="top-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movie</a></li>
+                <li><a href="movieYear.html">Movie Year</a></li>
+                <li><a href="CRUD.html">Watch List</a></li>
+            </ul>
+        </nav>
+</header>
+
+<main>
+ 
+    <form>
+      <div class="container">
+        <div class="form-group">
+
+          <!--FILE FORM-->
+          <label>File name</label>
+          <input id="fileName" type="text" class="form-control" value="wod.txt" disabled>
+      </div>
+
+        <br>
+  
+        <div class="form-group">
+
+          <!--CONTENT FORM-->
+          <label>Content</label>
+          <textarea id="fileContents" class="form-control"rows="5"></textarea>
+        </div>
+      </form>
+
+      <br><br>
+
+      <!--BUTTON-->
+      <button id="btnCreate" class="btn btn-default">Create</button> <button id="view"> <a href="CRUD.html" style="text-decoration: none; color:white;">view</a></button>
+    </div>
+
+    </div>
+</main>
+    <!--JS-->
+    <script src="stw.js">
+      </script>
+</body>
+</html>

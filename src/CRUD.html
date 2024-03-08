@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="stw.css">
+</head>
+<body>
+    <header class="top-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movie</a></li> 
+                <li><a href="movieYear.html">Movie Year</a></li>
+                <li><a href="#">Watch List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <div class="container">
+                <div class="form-group">
+
+                    <!--FILE FORM-->
+                    <label>File name</label>
+                    <input id="fileName" type="text" class="form-control" value="wod.txt" disabled>
+                </div>
+
+                <br><br>
+
+                <div class="form-group">
+
+                    <!--CONTENT FORM-->
+                    <label for="fileContents">Content</label>
+                    <textarea id="fileContents" class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+        </form>
+
+        <br><br>
+
+        <!--BUTTON-->
+        <button id="btnRead" class="btn btn-default">Read</button>
+        <button id="btnUpdate" class="btn btn-default">Update</button>
+
+        <!--TABLE-->
+        <table id="fileTable">
+            <thead>
+                <tr>
+                    <th>Word Of The Day</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="fileTableBody"></tbody>
+        </table>
+          
+    </main>
+
+    <script src="CRUD.js"></script>
+</body>
+</html>

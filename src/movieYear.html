@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Movie Year Search</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header class="top-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movie.html">Movie</a></li>
+                <li><a href="#">Movie Year</a></li> <!-- Stay on this page -->
+                <li><a href="CRUD.html">Watch List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            
+            <br><br><br><br><br><br><br>
+    
+            <center>
+                <div class="search-container">
+                    <input type="text" id="movieyear" placeholder="Search by Year...">
+                    <button type="button" onclick="searchByYear()" class="search-button">
+                        <img src="search1.png" alt="Search" width="20px">
+                    </button>
+                </div>
+            </center>
+
+            <center>
+                <div class="search-container">
+                    <input type="text" id="movietitle" placeholder="Search by Title...">
+                </div>
+            </center>
+            <br> <br> <br> <br>
+        
+
+        <div id="movieInfo">
+            <!-- Movie information will be displayed here -->
+        </div>
+        </div>
+    </main>
+
+    <script src="movieYear.js"></script> <!-- Update script path accordingly -->
+</body>
+</html>
